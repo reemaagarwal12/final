@@ -1,0 +1,71 @@
+
+body
+{ 
+background-image:url("tuc.jpg");
+background-position:center;
+background-size: 100%;
+}
+.dropbtn {
+  background-color:black;
+  color: white;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.list {
+  position: absolute;
+  background-color:lightgrey;
+  min-width: 115px;
+  z-index: 1;
+}
+.list a {
+  color: black;
+  font-size:20px;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.list a:hover {background-color: white}
+
+.dropdown:hover .list{
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: mediumseagreen;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+ #r1{
+ 	color:white;
+ 	text-align:center;
+ 	margin-top:20px;
+ 	margin-left:200px;
+ 	font-size:400%;
+}
+#r2{
+	color:white;
+	text-align: center;
+	margin-top:270px;
+	margin-left:50px;
+	font-size:150%;
+  border-style:inset;
+  border-radius:15px;
+  border-color:black;
+  margin-right:600px;
+  margin-left:600px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}

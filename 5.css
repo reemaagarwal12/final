@@ -1,0 +1,28 @@
+body 
+  {font-family: "Raleway", Arial, sans-serif;
+  background-image:url("15.jpg");
+background-position:center;
+background-size: 175%;
+}
+.rims{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:50px;
+}
+background-image{opacity:0.5;
+  filter: alpha(opacity=50);
+}
+.a{
+  background-color: lightgrey;
+  width: 400px;
+  border: 15px solid black;
+  padding: 50px;
+  margin-left:200px;
+}
+p.dotted{
+	outline-style: dotted;
+	text-align: center;
+	font-size:150%;
+	color:white;
+}
