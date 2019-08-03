@@ -28,7 +28,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: left;
+  float: right;
 }
 
 input[type=submit]:hover {
@@ -39,7 +39,8 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: grey;
   padding: 8px;
-  margin-right:900px;
+  margin-right:800px;
+  height:700px;
 }
 
 .a3 {
@@ -60,17 +61,16 @@ input[type=submit]:hover {
   clear: both;
 }
 
-
-@media screen and (max-width: 600px) {
-  .a3, .a4, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
 #c
 {
   padding:64px;
   color:lightgrey;
   align-content: center;
+}
+@media screen and (max-width: 600px) {
+  .a3, .a4, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 </style>

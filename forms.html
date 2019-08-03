@@ -1,14 +1,20 @@
 <html>
 <head>
   <link rel="stylesheet" href="6.css">
+  <p id="demo" style ="text-align:center;font-size:30px;color:mediumseagreen"></p>
+</head>
+<body>
+  <button onclick="myFunction()" style="font-size:25px";>WELCOME!! CLICK HERE !!</button>
+
+<p id="demo1" style="font-size:50px;color:slateblue;"></p>
 <div class="a1">
-  <form action="/action_page.php">
+  <form action="/action_page.php" method="post">
   <div class="a2">
     <div class="a3">
       <label for="fname">First Name</label>
     </div>
     <div class="a4">
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
     </div>
   </div>
   <div class="a2">
@@ -16,7 +22,7 @@
       <label for="lname">Last Name</label>
     </div>
     <div class="a4">
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
     </div>
   </div>
   <div class="a2">
@@ -39,9 +45,55 @@
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
     </div>
   </div>
-  <div class="a2">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
+  <div clas="a2">
+    <div class="a3">
+      <label for="phno">Age:</label>
+    </div>
+      <div class="a4">
+<input id="numb">
+<button type="button" onclick="myFunction1()">TRY</button>
+<p id="demo2" style="color:blue"></p>
+<script>
+     function goBack(){
+    window.history.back()
+  }
+  var d = new Date();
+document.getElementById("demo").innerHTML = d;
+
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", " ");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo1").innerHTML = txt;
+}
+
+function myFunction1() {
+  var x, text;
+  x = document.getElementById("numb").value;
+  if (isNaN(x) || x < 13 || x > 70) {
+    text = "Better luck next time";
+  } else {
+    text = "GOOD LUCK ! ";
+  }
+  document.getElementById("demo2").innerHTML = text;
+}
+
+</script>
 </div>
-  
+</div>
+<br>
+<div class="a2">
+<input type="submit" value="Submit">
+<script src=""></script>
+</div>
+</form>
+<input type="button" value="BACK" onclick="goBack()">
+</div>
+<script src="7.js"></script>
+</body>
+</html>
+
